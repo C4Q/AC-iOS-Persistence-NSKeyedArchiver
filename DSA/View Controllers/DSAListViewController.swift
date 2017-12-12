@@ -53,14 +53,12 @@ extension DSAListViewController: UITableViewDataSource {
         return cell
     }
     
-    // TODO: new
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         DataModel.shared.removeDSAItemFromIndex(fromIndex: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .automatic)
     }
 }
 
-// TODO: might add updating a DSA Item
 extension DSAListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         let dsaItem = DataModel.shared.getLists()[indexPath.row]

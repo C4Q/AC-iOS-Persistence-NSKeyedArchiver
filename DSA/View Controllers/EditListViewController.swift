@@ -25,7 +25,6 @@ class EditListViewController: UIViewController {
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-        // TODO: new
         navigationController?.dismiss(animated: true, completion: nil)
     }
     
@@ -50,7 +49,6 @@ class EditListViewController: UIViewController {
         }
     }
     
-    // TODO: new??
     private func showAlert() {
         let alertController = UIAlertController(title: "Missing Fields", message: "A title and description for the DSA item is required", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)

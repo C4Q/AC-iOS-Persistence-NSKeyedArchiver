@@ -60,7 +60,7 @@ class DataModel {
     
     // update
     public func updateDSAItem(withUpdatedItem item: DSA) {
-        if let index = lists.index(where: {$0 === item}) { // TODO: new??? identity comparison
+        if let index = lists.index(where: {$0 === item}) {
             lists[index] = item
         }
     }
